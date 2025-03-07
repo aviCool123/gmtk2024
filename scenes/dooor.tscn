@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk6f8muuh3d"]
+
+[ext_resource type="Texture2D" uid="uid://dsmy5r5whe1ov" path="res://assets/door and green.png" id="1_aguqe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhesf"]
+size = Vector2(16, 32)
+
+[node name="dooor" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_aguqe")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_yhesf")

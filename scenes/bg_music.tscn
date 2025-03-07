@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt52jbindomri"]
+
+[ext_resource type="AudioStream" uid="uid://gfsemslsn18l" path="res://Dosi & Aisake - Cruising _ Lofi _ NCS - Copyright Free Music.mp3" id="1_x8vxd"]
+
+[node name="bgMusic" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_x8vxd")
+autoplay = true
+bus = &"music"

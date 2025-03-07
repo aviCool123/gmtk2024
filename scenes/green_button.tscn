@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ylmfw81u5qwl"]
+
+[ext_resource type="Texture2D" uid="uid://dsmy5r5whe1ov" path="res://assets/door and green.png" id="2_5iara"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_naqti"]
+size = Vector2(16, 12)
+
+[node name="green_button" type="Area2D"]
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5iara")
+region_enabled = true
+region_rect = Rect2(16, 20, 16, 12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_naqti")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
